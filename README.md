@@ -1,55 +1,97 @@
-# P2P Communication App with Godot 4.4
+# P2P Communication App with Godot 4.4  
+# Aplicación de Comunicación P2P con Godot 4.4
 
-## Thot-P2P## DescriptionThis application allows P2P (Peer-to-Peer) communication between devices using different implementation methods in Godot 4.4: ENet, WebSocket, and tcp, udp, libp2p, nostr. Its main goal is to connect devices and exchange information, data, or messages.
+---
 
-## Features
-- **P2P Connections**: Support for P2P connections using ENet, WebSocket, webrtc, and TCP, UDP, and in beta libp2p, torrent, nostr.
-- **Information Exchange**: Allows sending and receiving messages between two connected devices.
-- **Modular Implementation**: Each connection method is implemented as an independent module, making it easy to use and modify.
+## Descripción / Description
 
-## Requisitos
+- **ES:** Esta aplicación permite la comunicación P2P (Peer-to-Peer) entre dispositivos usando diferentes métodos de implementación en Godot 4.4: ENet, WebSocket, TCP, UDP, torrent y nostr. Su objetivo principal es conectar dispositivos y facilitar el intercambio de información, datos o mensajes.  
+- **EN:** This application enables P2P (Peer-to-Peer) communication between devices using different implementation methods in Godot 4.4: ENet, WebSocket, TCP, UDP, torrent, and nostr. Its main goal is to connect devices and allow the exchange of information, data, or messages.
 
-- Godot Engine 4.4 o superior.
-- Conexión a Internet y/o lolcalhost , ipv 4/6.
-- Dos dispositivos compatibles con Godot (pueden ser ordenadores, smartphones, etc.).
+---
 
-## Métodos de Conexión
+## Características / Features
+
+- **ES:** **Conexiones P2P**: Soporte para conexiones P2P usando ENet, WebSocket, WebRTC, TCP, UDP, y en beta torrent y nostr.  
+- **EN:** **P2P Connections**: Support for P2P connections using ENet, WebSocket, WebRTC, TCP, UDP, and in beta torrent and nostr.
+
+- **ES:** **Intercambio de Información**: Permite enviar y recibir mensajes entre dos dispositivos conectados.  
+- **EN:** **Information Exchange**: Allows sending and receiving messages between two connected devices.
+
+- **ES:** **Implementación Modular**: Cada método de conexión está implementado como un módulo independiente, lo que facilita su uso y modificación.  
+- **EN:** **Modular Implementation**: Each connection method is implemented as an independent module, making it easy to use and modify.
+
+---
+
+## Requisitos / Requirements
+
+- **ES:**  
+  - Godot Engine 4.4 o superior.  
+  - Conexión a Internet y/o localhost, IPv4/6.  
+  - Dos dispositivos compatibles con Godot (ordenadores, smartphones, etc.).  
+
+- **EN:**  
+  - Godot Engine 4.4 or higher.  
+  - Internet connection and/or localhost, IPv4/6.  
+  - Two devices compatible with Godot (computers, smartphones, etc.).
+
+---
+
+## Métodos de Conexión / Connection Methods
 
 ### ENet
+- **ES:** ENet es una biblioteca confiable para comunicación en tiempo real, ideal para baja latencia y alta fiabilidad.  
+- **EN:** ENet is a reliable networking library for real-time communication, ideal for low latency and high reliability.  
 
-ENet es una biblioteca de red confiable para la comunicación en tiempo real.
-Es ideal para aplicaciones que requieren baja latencia y alta confiabilidad.
-- Juegos en línea que necesitan comunicación en tiempo real con baja latencia.
-- Aplicaciones de chat en tiempo real.
-- Transferencia de archivos pequeños en redes locales.
+Usos:  
+- **ES:** Juegos en línea, chats en tiempo real, transferencia de archivos pequeños en redes locales.  
+- **EN:** Online games, real-time chats, small file transfers in local networks.
 
-### WebSocket and webrtc
+---
 
-WebSocket proporciona una comunicación bidireccional a través de una sola conexión TCP.
-Es ideal para aplicaciones basadas en web que requieren una comunicación en tiempo real.
-- Aplicaciones web interactivas que necesitan actualizaciones en tiempo real, como chats y colaboración en línea.
-- Juegos multijugador basados en navegador.
-- Aplicaciones IoT que requieren comunicación constante con un servidor web.
+### WebSocket y WebRTC / WebSocket and WebRTC
+- **ES:** WebSocket proporciona comunicación bidireccional sobre una sola conexión TCP, ideal para aplicaciones web interactivas.  
+- **EN:** WebSocket provides bidirectional communication over a single TCP connection, ideal for interactive web apps.  
 
-### TCP , UDP
+Usos:  
+- **ES:** Chats en línea, colaboración en tiempo real, juegos multijugador en navegador, aplicaciones IoT.  
+- **EN:** Online chats, real-time collaboration, browser-based multiplayer games, IoT applications.
 
-TCP_Peer utiliza el protocolo TCP estándar para la comunicación. Es confiable y fácil de implementar para conexiones de red básicas.
-- Aplicaciones de transferencia de archivos que requieren fiabilidad en la entrega de datos.
-- Herramientas de administración remota donde la fiabilidad es más importante que la latencia.
-- Comunicación entre sistemas distribuidos que necesitan asegurar la entrega de mensajes.
+---
 
-## Usos Útiles
+### TCP y UDP / TCP and UDP
+- **ES:** TCP_Peer utiliza el protocolo TCP estándar para comunicación confiable; UDP ofrece baja latencia.  
+- **EN:** TCP_Peer uses the standard TCP protocol for reliable communication; UDP offers low latency.  
 
-1. **Juegos Multijugador**: Crea juegos que permitan a los jugadores conectarse y competir en tiempo real, ya sea en una red local o a través de Internet.
-2. **Aplicaciones de Chat**: Desarrolla aplicaciones de chat en tiempo real que permitan a los usuarios comunicarse instantáneamente.
-3. **Colaboración en Tiempo Real**: Facilita la colaboración en tiempo real en proyectos, como editores de texto colaborativos o aplicaciones de dibujo.
-4. **Intercambio de Archivos**: Implementa aplicaciones para el intercambio de archivos que aseguren la entrega fiable de datos.
-5. **Control Remoto**: Crea herramientas de administración y control remoto para gestionar dispositivos o sistemas distribuidos.
+Usos:  
+- **ES:** Transferencia de archivos, administración remota, comunicación entre sistemas distribuidos.  
+- **EN:** File transfer, remote administration, communication between distributed systems.
 
-## Contribuir
+---
 
-¡Las contribuciones son bienvenidas! Si deseas contribuir, por favor, realiza un fork del repositorio, crea una rama con tus cambios y envía un pull request.
+## Usos Útiles / Useful Use Cases
 
-## Licencia
+1. **ES:** Juegos multijugador en tiempo real.  
+   **EN:** Real-time multiplayer games.  
+2. **ES:** Aplicaciones de chat instantáneo.  
+   **EN:** Instant chat applications.  
+3. **ES:** Colaboración en tiempo real (texto, dibujo, etc.).  
+   **EN:** Real-time collaboration (text, drawing, etc.).  
+4. **ES:** Intercambio de archivos confiable.  
+   **EN:** Reliable file exchange.  
+5. **ES:** Herramientas de control remoto y administración de sistemas.  
+   **EN:** Remote control and system administration tools.
 
-Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo `LICENSE` para obtener más detalles.
+---
+
+## Contribuir / Contributing
+
+- **ES:** ¡Las contribuciones son bienvenidas! Haz un fork del repositorio, crea una rama con tus cambios y envía un pull request.  
+- **EN:** Contributions are welcome! Fork the repository, create a branch with your changes, and submit a pull request.
+
+---
+
+## Licencia / License
+
+- **ES:** Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.  
+- **EN:** This project is licensed under the MIT License. See the `LICENSE` file for details.
