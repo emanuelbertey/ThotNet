@@ -1,0 +1,15 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+/addons/webrtc
+/addons/lib
+*.dll
+*.pck
+*.apk
+*.idsig
+/.idea
+*.uid
+/test
+*.so
+*.import
+*.d

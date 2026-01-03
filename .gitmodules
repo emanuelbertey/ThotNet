@@ -1,0 +1,12 @@
+[submodule "addons/thot/iroh"]
+	path = addons/thot/iroh
+	url = https://github.com/emanuelbertey/godot-iroh.git
+
+[submodule "addons/thot/webrtc-godot"]
+	path = addons/thot/webrtc-godot
+	url = https://github.com/godotengine/webrtc-native.git
+
+[submodule "addons/thot/pkarr-godot"]
+	path = addons/thot/pkarr-godot
+	url = https://github.com/emanuelbertey/Godot-PKN.git
+
