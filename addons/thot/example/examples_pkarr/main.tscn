@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://c7iskwgu5aphr"]
+
+[ext_resource type="Script" uid="uid://bphs0tj6187fk" path="res://addons/thot/example/examples_pkarr/main.gd" id="1_tb2l5"]
+
+[node name="Node2D" type="Node2D" unique_id=864594727]
+script = ExtResource("1_tb2l5")
+
+[node name="Player" type="Sprite2D" parent="." unique_id=1949078096]
+position = Vector2(903, 491)

@@ -490,7 +490,7 @@ func _render_list(container, label, items, view_path, is_local):
 		b.text = "📁 " + dname
 		b.flat = true; b.alignment = HORIZONTAL_ALIGNMENT_LEFT
 		b.size_flags_horizontal = SIZE_EXPAND_FILL
-		b.add_theme_color_override("font_color", Color(0.9, 0.8, 0.2)) # Yellow/Gold for folders
+		b.add_theme_color_override("font_color", Color(0.38, 0.8, 0.2, 1.0)) # Yellow/Gold for folders
 		b.pressed.connect(_on_dir_enter.bind(dname, is_local))
 		hb.add_child(b)
 

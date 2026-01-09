@@ -1,6 +1,6 @@
 extends Control
 
-@onready var peer: Peerinfo = $Peerinfo
+@onready var peer: Gpkarr = $Peerinfo
 
 
 func _ready() -> void:

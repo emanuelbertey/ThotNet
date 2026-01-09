@@ -33,7 +33,7 @@ var upnp_ports := {}
 
 
 func _ready() -> void:
-
+	thread = Thread.new()
 
 #region regex sin uso
 
@@ -51,7 +51,7 @@ func _ready() -> void:
 		#print("URL inválida.")
 #endregion
 	
-	thread = Thread.new()
+
 
 #region Agregar o quitar servidor con tipo y puerto
 func add_server(node ,type: String, port: int, lobby: String = "webrtc_godot_4.4.dev3") -> bool:

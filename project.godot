@@ -18,7 +18,7 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 
 [application]
 
-config/name="Thot-P2P"
+config/name="ThotNet"
 run/main_scene="uid://x4s17iniresx"
 config/features=PackedStringArray("4.6", "Mobile")
 config/icon="res://icon.svg"

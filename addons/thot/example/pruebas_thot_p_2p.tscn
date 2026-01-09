@@ -224,4 +224,4 @@ text = "test file"
 [connection signal="pressed" from="GridContainer/Panel2/Button" to="." method="_on_button_pressed_service"]
 [connection signal="pressed" from="GridContainer/Panel3/chat" to="." method="_on_chat_pressed"]
 [connection signal="pressed" from="GridContainer/Panel4/torrent udp" to="." method="_on_torrent_udp_pressed"]
-[connection signal="pressed" from="GridContainer/Panel5/torrent udp" to="." method="_on_torrent_udp_pressed"]
+[connection signal="pressed" from="GridContainer/Panel5/torrent udp" to="." method="_on_file_pressed"]

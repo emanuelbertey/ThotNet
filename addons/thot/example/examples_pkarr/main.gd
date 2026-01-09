@@ -2,7 +2,7 @@ extends Node2D
 
 
 func _ready() -> void:
-	var peer = Peerinfo.new()
+	var peer = Gpkarr.new()
 
 	prints(peer.get_secret_bytes())
 	peer.info_ips()
