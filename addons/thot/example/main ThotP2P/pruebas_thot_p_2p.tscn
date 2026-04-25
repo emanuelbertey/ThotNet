@@ -1,10 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://x4s17iniresx"]
+[gd_scene format=3 uid="uid://x4s17iniresx"]
 
-[ext_resource type="Script" uid="uid://c651cp01ol4wx" path="res://addons/thot/example/main ThotP2P/pruebas_thot_p_2p.gd" id="1_amom4"]
-[ext_resource type="Texture2D" uid="uid://cmv4dyu6hew1u" path="res://addons/thot/example/example FPS/addons/kenney_prototype_textures/purple/texture_04.png" id="2_rwh5o"]
-[ext_resource type="Texture2D" uid="uid://cy7fcyk1u33qa" path="res://screenshots/dfr2.PNG" id="3_amom4"]
-[ext_resource type="Texture2D" uid="uid://bwm52fxkasxdn" path="res://screenshots/dfr.PNG" id="4_rwh5o"]
-[ext_resource type="Texture2D" uid="uid://b2ijor1wqiqfj" path="res://screenshots/dfr3.PNG" id="5_tigdo"]
+[ext_resource type="Script" uid="uid://dhiwkra6i1hhf" path="res://addons/thot/example/main ThotP2P/pruebas_thot_p_2p.gd" id="1_amom4"]
+[ext_resource type="Texture2D" uid="uid://b7sbl44u1x26" path="res://addons/thot/example/example FPS/addons/kenney_prototype_textures/purple/texture_04.png" id="2_rwh5o"]
+[ext_resource type="Texture2D" uid="uid://g0cr3ytiaqwd" path="res://screenshots/dfr2.PNG" id="3_amom4"]
+[ext_resource type="Texture2D" uid="uid://dlwcab1gov5fb" path="res://screenshots/dfr.PNG" id="4_rwh5o"]
+[ext_resource type="Texture2D" uid="uid://bbs2lub4nb50h" path="res://screenshots/dfr3.PNG" id="5_tigdo"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_amom4"]
 content_margin_left = 0.0

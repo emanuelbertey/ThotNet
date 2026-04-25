@@ -20,12 +20,12 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 
 config/name="ThotNet"
 run/main_scene="uid://x4s17iniresx"
-config/features=PackedStringArray("4.6", "Mobile")
+config/features=PackedStringArray("4.7", "Mobile")
 config/icon="res://icon.svg"
 
 [autoload]
 
-Thot="*uid://366l6uj5dsgk"
+Thot="*uid://bli0t4dnu3j7v"
 
 [display]
 

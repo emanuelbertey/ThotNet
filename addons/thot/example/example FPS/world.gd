@@ -27,7 +27,7 @@ func _on_host_button_pressed():
 	
 	await get_tree().create_timer(3.0).timeout
 	var peer = Thot.server_thot(type,9999)
-	self.multiplayer.multiplayer_peer = peer
+	#self.multiplayer.multiplayer_peer = peer
 
 
 	multiplayer.peer_connected.connect(add_player)
