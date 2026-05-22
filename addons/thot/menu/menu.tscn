@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dvdidnkl0k2qq"]
 
-[node name="menu" type="Control"]
+[node name="menu" type="Control" unique_id=106356438]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -8,10 +8,10 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1809448143]
 follow_viewport_enabled = true
 
-[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer"]
+[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer" unique_id=104515061]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -24,157 +24,157 @@ grow_vertical = 2
 scale = Vector2(1, 0.96)
 size_flags_vertical = 3
 
-[node name="TextureRect" type="TextureRect" parent="CanvasLayer/PanelContainer"]
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/PanelContainer" unique_id=550992634]
 layout_mode = 2
 flip_h = true
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/PanelContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/PanelContainer" unique_id=1890946324]
 layout_mode = 2
 
-[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/PanelContainer/VBoxContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/PanelContainer/VBoxContainer" unique_id=475007506]
 custom_minimum_size = Vector2(2.29, 21.135)
 layout_mode = 2
 
-[node name="Label" type="Label" parent="CanvasLayer/PanelContainer/VBoxContainer"]
+[node name="Label" type="Label" parent="CanvasLayer/PanelContainer/VBoxContainer" unique_id=880186335]
 layout_mode = 2
 text = "new game"
 horizontal_alignment = 1
 
-[node name="MarginContainer2" type="MarginContainer" parent="CanvasLayer/PanelContainer/VBoxContainer"]
+[node name="MarginContainer2" type="MarginContainer" parent="CanvasLayer/PanelContainer/VBoxContainer" unique_id=1496047934]
 custom_minimum_size = Vector2(2.29, 21.135)
 layout_mode = 2
 
-[node name="HBoxContainer2" type="HBoxContainer" parent="CanvasLayer/PanelContainer/VBoxContainer"]
+[node name="HBoxContainer2" type="HBoxContainer" parent="CanvasLayer/PanelContainer/VBoxContainer" unique_id=1113741070]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer2"]
+[node name="Label" type="Label" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer2" unique_id=1790517007]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.3
 text = "user"
 horizontal_alignment = 2
 
-[node name="MarginContainer2" type="MarginContainer" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer2"]
+[node name="MarginContainer2" type="MarginContainer" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer2" unique_id=1820536482]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.14
 
-[node name="LineEdit" type="LineEdit" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer2"]
+[node name="LineEdit" type="LineEdit" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer2" unique_id=287629442]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 1.65
 alignment = 1
 
-[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer2"]
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer2" unique_id=1771452205]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 2.08
 
-[node name="MarginContainer3" type="MarginContainer" parent="CanvasLayer/PanelContainer/VBoxContainer"]
+[node name="MarginContainer3" type="MarginContainer" parent="CanvasLayer/PanelContainer/VBoxContainer" unique_id=2010484019]
 custom_minimum_size = Vector2(2.29, 21.135)
 layout_mode = 2
 
-[node name="HBoxContainer3" type="HBoxContainer" parent="CanvasLayer/PanelContainer/VBoxContainer"]
+[node name="HBoxContainer3" type="HBoxContainer" parent="CanvasLayer/PanelContainer/VBoxContainer" unique_id=898234035]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer3"]
+[node name="Label" type="Label" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer3" unique_id=1190459078]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.3
 text = "pass"
 horizontal_alignment = 2
 
-[node name="MarginContainer2" type="MarginContainer" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer3"]
+[node name="MarginContainer2" type="MarginContainer" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer3" unique_id=1692769564]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.14
 
-[node name="LineEdit" type="LineEdit" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer3"]
+[node name="LineEdit" type="LineEdit" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer3" unique_id=1171705419]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 1.65
 alignment = 1
 secret = true
 
-[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer3"]
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer3" unique_id=922330717]
 custom_minimum_size = Vector2(0.1, 0)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 2.08
 
-[node name="MarginContainer4" type="MarginContainer" parent="CanvasLayer/PanelContainer/VBoxContainer"]
+[node name="MarginContainer4" type="MarginContainer" parent="CanvasLayer/PanelContainer/VBoxContainer" unique_id=980202670]
 custom_minimum_size = Vector2(2.29, 21.135)
 layout_mode = 2
 
-[node name="HBoxContainer4" type="HBoxContainer" parent="CanvasLayer/PanelContainer/VBoxContainer"]
+[node name="HBoxContainer4" type="HBoxContainer" parent="CanvasLayer/PanelContainer/VBoxContainer" unique_id=1028779487]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer4"]
+[node name="Label" type="Label" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer4" unique_id=868985194]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.3
 text = "ip *"
 horizontal_alignment = 2
 
-[node name="MarginContainer2" type="MarginContainer" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer4"]
+[node name="MarginContainer2" type="MarginContainer" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer4" unique_id=1087415220]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.14
 
-[node name="LineEdit" type="LineEdit" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer4"]
+[node name="LineEdit" type="LineEdit" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer4" unique_id=1485558257]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 1.65
 alignment = 1
 secret = true
 
-[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer4"]
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer4" unique_id=485149055]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 2.08
 
-[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/PanelContainer/VBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/PanelContainer/VBoxContainer" unique_id=1589842388]
 layout_mode = 2
 alignment = 1
 
-[node name="salir" type="TouchScreenButton" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer"]
+[node name="salir" type="TouchScreenButton" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer" unique_id=506701541]
 position = Vector2(392, 119.75)
 scale = Vector2(0.4, 0.4)
 
-[node name="Label" type="Label" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer/salir"]
+[node name="Label" type="Label" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer/salir" unique_id=281040069]
 offset_left = 87.5
 offset_top = 29.9999
 offset_right = 125.5
 offset_bottom = 52.9999
 text = "salir"
 
-[node name="login" type="TouchScreenButton" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer"]
+[node name="login" type="TouchScreenButton" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer" unique_id=98985420]
 position = Vector2(541, 120.792)
 scale = Vector2(0.4, 0.4)
 
-[node name="Label" type="Label" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer/login"]
+[node name="Label" type="Label" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer/login" unique_id=1762936909]
 offset_left = 87.5
 offset_top = 29.9999
 offset_right = 125.5
 offset_bottom = 52.9999
 text = "login"
 
-[node name="regresar" type="TouchScreenButton" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer"]
+[node name="regresar" type="TouchScreenButton" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer" unique_id=736971261]
 position = Vector2(682, 117.667)
 scale = Vector2(0.4, 0.4)
 
-[node name="Label2" type="Label" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer/regresar"]
+[node name="Label2" type="Label" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer/regresar" unique_id=613579898]
 offset_left = 79.9998
 offset_top = 27.4999
 offset_right = 140.0
 offset_bottom = 50.4999
 text = "registre"
 
-[node name="server" type="TouchScreenButton" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer"]
+[node name="server" type="TouchScreenButton" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer" unique_id=1977086326]
 position = Vector2(254, 120.708)
 scale = Vector2(0.4, 0.4)
 
-[node name="Label2" type="Label" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer/server"]
+[node name="Label2" type="Label" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer/server" unique_id=1854992545]
 offset_left = 79.9998
 offset_top = 27.4999
 offset_right = 140.0

@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://ccfgrt55f2jbc"]
+
+[ext_resource type="Script" uid="uid://ce4naq7cv37fh" path="res://addons/thot/example/voip-3d/testScene.gd" id="1_wixvr"]
+
+[node name="Node3D" type="Node3D" unique_id=1079032516]
+script = ExtResource("1_wixvr")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1485045003]
+
+[node name="server" type="Node" parent="CanvasLayer" unique_id=416737714]
+
+[node name="host" type="Button" parent="CanvasLayer/server" unique_id=1516746190]
+offset_right = 268.0
+offset_bottom = 73.0
+text = "host server"
+
+[node name="client" type="Node" parent="CanvasLayer" unique_id=1895162644]
+
+[node name="connectToServer" type="Button" parent="CanvasLayer/client" unique_id=1644462024]
+offset_left = -1.0
+offset_top = 125.0
+offset_right = 267.0
+offset_bottom = 198.0
+text = "connect to server"
+
+[node name="CheckButton" type="CheckButton" parent="CanvasLayer" unique_id=1964821068]
+offset_left = 324.0
+offset_top = 18.0
+offset_right = 368.0
+offset_bottom = 42.0
+
+[connection signal="button_down" from="CanvasLayer/server/host" to="." method="_on_host_button_down"]
+[connection signal="button_down" from="CanvasLayer/client/connectToServer" to="." method="_on_connect_to_server_button_down"]

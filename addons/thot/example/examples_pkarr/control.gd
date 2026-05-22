@@ -62,7 +62,7 @@ func _on_button_2_pressed() -> void:
 	var packed_key = PackedByteArray()
 	for byte in key:
 		packed_key.append(byte)
-	
+	prints("no publica")
 	#if peer.prepare_packet(str($clave.text),str($valor.text),mode , relays,packed_key):
 		#$publicar.text = "publicado "
 	#else:

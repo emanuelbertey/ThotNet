@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://da6j6124gu67a"]
+
+[ext_resource type="Script" uid="uid://bdrwoa5uss2d5" path="res://addons/thot/example/voip-3d/audioManager.gd" id="1_6tp3t"]
+
+[node name="audioManager" type="Node"]
+script = ExtResource("1_6tp3t")
