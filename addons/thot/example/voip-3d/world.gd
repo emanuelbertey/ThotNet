@@ -1,5 +1,5 @@
 extends Node3D
-
+var is_play: bool = false
 const playerScene = preload("res://addons/thot/example/voip-3d/character.tscn")
 
 func _ready():
@@ -9,6 +9,7 @@ func _ready():
 		multiplayer.peer_disconnected.connect(removePlayer)
 		var player = playerScene.instantiate()
 		player.name = str(1)
+		player.is_play = self.is_play
 		playersNode.add_child(player, true)
 	else:
 		push_warning("CLIENT SESSION")

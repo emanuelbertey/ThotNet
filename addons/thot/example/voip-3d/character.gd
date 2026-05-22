@@ -2,7 +2,7 @@ extends CharacterBody3D
 
 const SPEED = 5.0
 const JUMP_VELOCITY = 4.5
-
+var is_play: bool
 const mouse_sensitivity = 0.002
 
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
@@ -11,6 +11,8 @@ func _enter_tree():
 	set_multiplayer_authority(name.to_int())
 
 func _ready():
+	if multiplayer.is_server() and !is_play:
+		return
 	get_node("audioManager").setupAudio(name.to_int())
 	
 	if !is_multiplayer_authority():

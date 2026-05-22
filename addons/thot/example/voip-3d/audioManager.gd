@@ -3,7 +3,16 @@ extends Node
 var opus_encoder: TwovoipOpusEncoder
 var opus_stream: AudioStreamOpus
 var opus_playback: AudioStreamPlaybackOpus
-var opus_chunk_size: int = 1920
+'''
+chunksize	duración	latencia
+120        2.5m          muy baja
+240        5ms           baja
+480        10ms          media
+960        20ms          normal
+1920       40ms          alta
+2880       60ms          muy alta
+'''
+var opus_chunk_size: int = 960
 var audio_chunk_size: int
 var audio_player: AudioStreamPlayer3D
 var jitter_buffer: Array = []
@@ -32,6 +41,7 @@ func _process(delta):
 	var chunk = AudioServer.get_input_frames(audio_chunk_size)
 	if chunk.size() == 0:
 		return
+	#prints(chunk.size())
 	opus_encoder.process_pre_encoded_chunk(chunk, opus_chunk_size, false, false)
 	var packet = opus_encoder.encode_chunk(PackedByteArray(), 1.0)
 	if packet.size() > 0:
@@ -39,7 +49,7 @@ func _process(delta):
 
 @rpc("any_peer", "call_remote", "unreliable")
 func _send_audio(packet: PackedByteArray):
-	if not opus_playback:
+	if not opus_playback and audio_player != null:
 		audio_player.stop()
 		audio_player.play()
 		opus_playback = audio_player.get_stream_playback()
